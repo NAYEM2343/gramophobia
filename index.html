@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GramoPhobia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <h2>GramoPhobia</h2>
+    <p>Check your English text for spelling and grammar correction with these Automation systems</p>
+    
+    <div id="editableEditor" contenteditable="true"></div>
+    
+    <div class="checkbuttons">
+        <button id="checkButton">Check Text</button>
+        <button id="copyButton">Copy Text</button>
+        <!-- FIXED: Button ID is now clearButton -->
+        <button id="clearButton">Clear Text</button> 
+    </div>
+    
+    <div class="wordCounter">
+        <p>Total Character: <span id="total-counter">0</span></p> 
+        <p>Remaining: <span id="remaining-counter">1500</span></p>
+    </div>
+</div>
+
+<!-- FIXED: Added the script tag to actually run your JS file -->
+<script src="app.js"></script>
+</body>
+</html>
